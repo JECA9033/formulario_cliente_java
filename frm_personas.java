@@ -238,6 +238,8 @@ DefaultTableModel tbl_modelo;
         cliente.setDireccion(this.txt_Direccion.getText());
         cliente.setTelefono(this.txt_Telefono.getText());
         cliente.setFecha_nacimiento(this.txt_Nacimiento.getText());
+        tbl_modelo.addRow(cliente.crear());
+        tbl_clientes.setModel(tbl_modelo);
     }//GEN-LAST:event_btn_crearActionPerformed
 
     /**
